@@ -16,6 +16,11 @@
       <a-asset-item id="table-obj" src="./table/tinker.obj"></a-asset-item>
       <a-asset-item id="table-mtl" src="./table/obj.mtl"></a-asset-item>
 
+      <a-asset-item id="side-obj" src="./table/tinker.obj"></a-asset-item>
+      <a-asset-item id="side-mtl" src="./table/obj.mtl"></a-asset-item>
+
+
+      <a-asset-item id="table-gltf" src="./table/Sizzling Blorr.glb"></a-asset-item>
    
       
     </a-assets>
@@ -48,8 +53,8 @@
     
     <!--------------------------------------OBJ Models----------------------------------------------------------->   
   
-    <a-entity obj-model="obj: #table-obj"  position="0 0 0"  >
-      <a-entity mtl-model="obj: #table-mtl"  position="0 0 0"  ></a-entity>
+    <a-entity obj-model="obj: #table-obj ; mtl: #table-mtl"  position="2 -2 0"  >
+      <a-entity obj-model="obj: #side-obj; mtl: #side-mtl"  position="3 -3 0"  ></a-entity>
     </a-entity>
 
    
